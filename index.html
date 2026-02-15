@@ -1,7 +1,45 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello.</title>
+  <style>
+    :root {
+      --text: #35ff8d;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    body {
+      font-family: "Lucida Console", Monaco, monospace;
+      color: var(--text);
+      background: #000;
+      overflow: hidden;
+    }
+
+    .terminal {
+      width: 100vw;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .row {
+      margin: 0;
+      font-size: clamp(14px, 2.2vw, 18px);
+      line-height: 1.2;
+      white-space: pre;
+    }
+  </style>
 </head>
 <body>
-Nothing to see here... :)
+  <main class="terminal" role="main" aria-label="Matrix style terminal">
+    <p class="row">The Matrix has you...</p>
+  </main>
 </body>
 </html>
